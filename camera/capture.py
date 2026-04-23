@@ -33,7 +33,7 @@ def capture_image():
 		check=True,
 	)
 
-	return filename
+	return filename.relative_to(BASE_DIR.parent)
 
 if __name__== "__main__":
 	img = capture_image()
